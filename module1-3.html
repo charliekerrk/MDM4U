@@ -1,73 +1,161 @@
-<h1>Les biais</h1>
-<h2>Vidéo de la leçon sur les biais</h2>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Les biais</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+<style>
+  :root {
+    --teal: #009688;
+    --teal-dark: #00695c;
+    --bg: #f4f7f7;
+    --text: #1f2d2d;
+    --line: #d5dedd;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    background: var(--teal);
+    color: #fff;
+    padding: 32px 20px;
+  }
+  header h1 {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 500;
+  }
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 20px 48px;
+  }
+  section {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-top: 24px;
+  }
+  h2 {
+    margin: 0 0 14px;
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: var(--teal-dark);
+    border-left: 4px solid var(--teal);
+    padding-left: 12px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--teal-dark);
+  }
+  h4 {
+    margin: 18px 0 6px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  p { margin: 0 0 8px; }
+  ul { margin: 0; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+  .video iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 6px;
+  }
+  .bias {
+    border-top: 1px solid var(--line);
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  .bias:first-of-type {
+    border-top: 0;
+    padding-top: 0;
+    margin-top: 0;
+  }
+</style>
+</head>
+<body>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xm38DnpQPzE?si=RPdz7jHNN9FD-4l4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<header>
+  <h1>Les biais</h1>
+</header>
 
-<h2>Résumé des différents types de biais</h2>
+<main>
+  <section>
+    <h2>Vidéo de la leçon sur les biais</h2>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/xm38DnpQPzE?si=RPdz7jHNN9FD-4l4" title="Vidéo de la leçon sur les biais" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
 
-<h3>1. Le biais d’échantillonnage</h3>
-<p>
-  Ce biais se produit lorsque l’échantillon choisi ne permet pas de représenter
-  correctement la population étudiée.
-</p>
+  <section>
+    <h2>Résumé des différents types de biais</h2>
 
-<h4>La taille de l’échantillon</h4>
-<ul>
-  <li>
-    <strong>Échantillon trop petit :</strong> Il n’y a pas assez de répondants
-    pour tirer des conclusions fiables.
-  </li>
-</ul>
+    <div class="bias">
+      <h3>1. Le biais d’échantillonnage</h3>
+      <p>Ce biais se produit lorsque l’échantillon choisi ne permet pas de représenter correctement la population étudiée.</p>
 
-<h4>Les caractéristiques de l’échantillon</h4>
-<ul>
-  <li>
-    L’échantillon choisi ne représente pas correctement les caractéristiques
-    de la population étudiée.
-  </li>
-</ul>
+      <h4>La taille de l’échantillon</h4>
+      <ul>
+        <li><strong>Échantillon trop petit :</strong> Il n’y a pas assez de répondants pour tirer des conclusions fiables.</li>
+      </ul>
 
-<h3>2. Le biais de surreprésentation</h3>
-<p>
-  Ce biais se produit lorsqu’un groupe de participants est trop nombreux dans
-  l’échantillon par rapport à sa proportion réelle dans la population.
-</p>
+      <h4>Les caractéristiques de l’échantillon</h4>
+      <ul>
+        <li>L’échantillon choisi ne représente pas correctement les caractéristiques de la population étudiée.</li>
+      </ul>
+    </div>
 
-<ul>
-  <li>
-    La méthode de sondage ne tient pas compte de la taille différente des
-    groupes.
-  </li>
-</ul>
+    <div class="bias">
+      <h3>2. Le biais de surreprésentation</h3>
+      <p>Ce biais se produit lorsqu’un groupe de participants est trop nombreux dans l’échantillon par rapport à sa proportion réelle dans la population.</p>
+      <ul>
+        <li>La méthode de sondage ne tient pas compte de la taille différente des groupes.</li>
+      </ul>
+    </div>
 
-<h3>3. Le biais de réponse</h3>
-<p>
-  Ce biais se produit lorsque les questions ou les conditions du sondage
-  influencent les réponses des participants.
-</p>
+    <div class="bias">
+      <h3>3. Le biais de réponse</h3>
+      <p>Ce biais se produit lorsque les questions ou les conditions du sondage influencent les réponses des participants.</p>
 
-<h4>Les questions peuvent influencer les réponses</h4>
-<ul>
-  <li>Utiliser du <strong>gras</strong> ou d'autres éléments pour influencer une réponse.</li>
-  <li>Mal formuler une question.</li>
-  <li>Utiliser des questions fermées qui poussent vers une réponse particulière.</li>
-</ul>
+      <h4>Les questions peuvent influencer les réponses</h4>
+      <ul>
+        <li>Utiliser du <strong>gras</strong> ou d'autres éléments pour influencer une réponse.</li>
+        <li>Mal formuler une question.</li>
+        <li>Utiliser des questions fermées qui poussent vers une réponse particulière.</li>
+      </ul>
 
-<h4>Autres facteurs qui peuvent influencer les réponses</h4>
-<ul>
-  <li>Le ton ou l’attitude de la personne qui fait l’entrevue.</li>
-  <li>Le lieu et le moment où le sondage est réalisé.</li>
-  <li>
-    Le niveau de confidentialité des résultats : une personne peut modifier
-    sa réponse si elle pense que ses réponses ne resteront pas confidentielles.
-  </li>
-</ul>
+      <h4>Autres facteurs qui peuvent influencer les réponses</h4>
+      <ul>
+        <li>Le ton ou l’attitude de la personne qui fait l’entrevue.</li>
+        <li>Le lieu et le moment où le sondage est réalisé.</li>
+        <li>Le niveau de confidentialité des résultats : une personne peut modifier sa réponse si elle pense que ses réponses ne resteront pas confidentielles.</li>
+      </ul>
+    </div>
 
-<h3>4. Le biais de non-réponse</h3>
-<p>
-  Ce biais se produit lorsque certaines personnes ne répondent pas au
-  questionnaire. Il manque alors des renseignements importants pour
-  représenter correctement la population étudiée.
-</p>
-     
-</ul>
+    <div class="bias">
+      <h3>4. Le biais de non-réponse</h3>
+      <p>Ce biais se produit lorsque certaines personnes ne répondent pas au questionnaire. Il manque alors des renseignements importants pour représenter correctement la population étudiée.</p>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
