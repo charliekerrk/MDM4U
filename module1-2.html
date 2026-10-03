@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+<meta charset="UTF-8">
 <title>MDM4U</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -12,6 +13,37 @@ body {font-family: "Roboto", sans-serif}
 .w3-bar-block .w3-bar-item {
   padding: 16px;
   font-weight: bold;
+}
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.method {
+  margin-bottom: 28px;
+  padding: 8px 24px 20px 24px;
+  border-left: 6px solid #009688;
+}
+.method h2 {
+  color: #009688;
+  margin-bottom: 8px;
+}
+.example {
+  background-color: #e0f2f1;
+  border-radius: 4px;
+  padding: 12px 16px;
+}
+.doc-frame {
+  position: relative;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.doc-frame iframe {
+  display: block;
+  width: 100%;
+  height: 800px;
+  border: 0;
 }
 </style>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -43,80 +75,99 @@ $(function(){
 </header>
 
 <div class="w3-container" style="padding:32px">
+<div class="content">
 
-<h1>Méthodes d'échantillonnage</h1>
+<div class="method w3-card">
+  <h2>Échantillonnage volontaire</h2>
+  <p>
+    Les gens décident eux-mêmes de participer à l'étude. Le chercheur ne
+    choisit pas les participants. Cette méthode peut donner des résultats
+    biaisés, parce que les personnes qui ont une opinion très forte
+    participent plus souvent.
+  </p>
+  <p class="example">
+    <b>Exemple :</b> Un sondage sur un site de nouvelles ou une story
+    Instagram où chaque personne choisit si elle est pour ou contre une règle.
+  </p>
+</div>
 
-<h2>Échantillonnage volontaire</h2>
-<p>
-  Les personnes choisissent elles-mêmes de participer à l'étude. Le chercheur
-  ne sélectionne pas directement les participants. Cette méthode peut créer
-  un biais, car les personnes qui ont une opinion très forte sont souvent plus
-  susceptibles de participer.
-</p>
-<p>
-  <b>Exemple :</b> Un sondage sur un site de nouvelles ou une story Instagram
-  où les gens choisissent s'ils sont pour ou contre une règle.
-</p>
+<div class="method w3-card">
+  <h2>Échantillonnage aléatoire simple</h2>
+  <p>
+    Chaque personne de la population a la même chance d'être choisie.
+    On choisit les participants complètement au hasard.
+  </p>
+  <p class="example">
+    <b>Exemple :</b> On met le nom de tous les élèves de l'école dans un
+    chapeau, puis on en pige 30 au hasard.
+  </p>
+</div>
 
-<h2>Échantillonnage aléatoire simple</h2>
-<p>
-  Chaque personne de la population a la même chance d'être choisie. Les
-  participants sont sélectionnés complètement au hasard, sans tenir compte
-  de leurs caractéristiques.
-</p>
-<p>
-  <b>Exemple :</b> Mettre les noms de tous les élèves de l'école dans un
-  chapeau, puis en choisir 30 au hasard.
-</p>
+<div class="method w3-card">
+  <h2>Échantillonnage aléatoire stratifié</h2>
+  <p>
+    On divise d'abord la population en groupes appelés
+    <strong>strates</strong> (par exemple selon l'âge ou le niveau scolaire).
+    Ensuite, on choisit des personnes au hasard dans chaque groupe, selon
+    la taille du groupe dans la population.
+  </p>
+  <p class="example">
+    <b>Exemple :</b> Dans une école de 1000 élèves, on divise les élèves
+    selon leur niveau scolaire. Si les élèves de 9e année représentent
+    40 % de l'école, alors environ 40 % de l'échantillon sera composé
+    d'élèves de 9e année.
+  </p>
+</div>
 
-<h2>Échantillonnage aléatoire stratifié</h2>
-<p>
-  La population est d'abord divisée en différents groupes appelés
-  <strong>strates</strong>. Ces groupes peuvent être formés selon l'âge,
-  le niveau scolaire ou une autre caractéristique. Ensuite, on choisit
-  au hasard des personnes dans chaque groupe, généralement en fonction
-  de la proportion de chaque groupe dans la population.
-</p>
-<p>
-  <b>Exemple :</b> Dans une école de 1000 élèves, on divise les élèves
-  selon leur niveau scolaire. Si les élèves de 9e année représentent
-  40 % de l'école, environ 40 % de l'échantillon sera composé d'élèves
-  de 9e année.
-</p>
+<div class="method w3-card">
+  <h2>Échantillonnage aléatoire en grappes</h2>
+  <p>
+    On divise la population en groupes qui existent déjà, appelés
+    <strong>grappes</strong> (une classe, une école, un quartier). On choisit
+    quelques grappes au hasard, puis on interroge toutes les personnes de
+    ces grappes.
+  </p>
+  <p class="example">
+    <b>Exemple :</b> Pour une étude dans un conseil scolaire, on choisit
+    3 écoles secondaires au hasard et tous les élèves de ces 3 écoles
+    répondent au sondage.
+  </p>
+</div>
 
-<h2>Échantillonnage aléatoire en grappes</h2>
-<p>
-  La population est divisée en groupes déjà existants appelés
-  <strong>grappes</strong>, comme des classes, des écoles ou des quartiers.
-  On choisit ensuite quelques grappes au hasard et on interroge toutes les
-  personnes qui font partie des grappes sélectionnées.
-</p>
-<p>
-  <b>Exemple :</b> Pour faire une étude dans un conseil scolaire, on choisit
-  3 écoles secondaires au hasard et on fait passer le sondage à tous les
-  élèves de ces 3 écoles.
-</p>
-
-<h2>Échantillonnage aléatoire systématique</h2>
-<p>
-  Les personnes de la population sont placées dans un ordre. On choisit
-  ensuite un point de départ au hasard, puis on sélectionne les personnes
-  selon un intervalle régulier, comme chaque 10e personne.
-</p>
-<p>
-  <b>Exemple :</b> À l'entrée d'un centre commercial, on choisit d'abord
-  la 3e personne qui entre, puis chaque 10e personne après elle :
-  la 13e, la 23e, la 33e, etc.
-</p>
+<div class="method w3-card">
+  <h2>Échantillonnage aléatoire systématique</h2>
+  <p>
+    On met les personnes de la population en ordre. On choisit un point de
+    départ au hasard, puis on prend une personne à intervalle régulier,
+    par exemple chaque 10e personne.
+  </p>
+  <p class="example">
+    <b>Exemple :</b> À l'entrée d'un centre commercial, on choisit la
+    3e personne qui entre, puis chaque 10e personne après elle :
+    la 13e, la 23e, la 33e, etc.
+  </p>
+</div>
 
 <h1>Exercices</h1>
 
+<h3>Exercices 1.1 et 1.2</h3>
+
+<div class="doc-frame w3-card">
+  <iframe
+    src="https://docs.google.com/document/d/18X6qjMo0JP4agjxt9GjUJEkao_GUWmQG9SGLU_gRIlU/preview"
+    title="Exercices 1.1 et 1.2"
+    allowfullscreen>
+  </iframe>
+</div>
+
 <p>
-  <a href="#" target="_blank">
-    Exercices 1.1 et 1.2 - La représentation des données et l'échantillonnage
+  <a class="w3-button w3-teal" target="_blank"
+     href="https://docs.google.com/document/d/18X6qjMo0JP4agjxt9GjUJEkao_GUWmQG9SGLU_gRIlU/edit?usp=sharing">
+    <i class="fa fa-external-link"></i> Ouvrir dans un nouvel onglet
   </a>
 </p>
 
+</div>
 </div>
 
 <footer class="w3-container w3-theme" style="padding:32px">
@@ -156,6 +207,6 @@ function myFunction() {
 }
 
 </script>
-     
+
 </body>
 </html>
