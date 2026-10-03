@@ -1,43 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<title>Module 2.1 : Les distributions des données</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Module 2.1 : Les distributions des données</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
 <style>
-body {font-family: "Roboto", sans-serif}
-.w3-bar-block .w3-bar-item {
-  padding: 16px;
-  font-weight: bold;
-}
+  :root {
+    --teal: #009688;
+    --teal-dark: #00695c;
+    --bg: #f4f7f7;
+    --text: #1f2d2d;
+    --line: #d5dedd;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+  header {
+    background: var(--teal);
+    color: #fff;
+    padding: 32px 20px;
+  }
+  header h1 {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 500;
+  }
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 20px 48px;
+  }
+  section {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 24px;
+  }
+  h2 {
+    margin: 0 0 14px;
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: var(--teal-dark);
+    border-left: 4px solid var(--teal);
+    padding-left: 12px;
+  }
+  .graph {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    max-height: 600px;
+  }
+  .graph iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+  }
+  @media (min-width: 700px) {
+    .graph { aspect-ratio: 4 / 3; }
+  }
 </style>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-        
-<h2>La distribution en cloche</h2>
 
-<iframe src="https://www.desmos.com/calculator/qaybmcdbtn?embed" 
-        width="500" height="500" 
-        style="border: 1px solid #ccc" frameborder="0"></iframe>
+<header>
+  <h1>Module 2.1 : Les distributions des données</h1>
+</header>
 
-<h2>La distribution en U</h2>
+<main>
+  <section>
+    <h2>La distribution en cloche</h2>
+    <div class="graph">
+      <iframe src="https://www.desmos.com/calculator/qaybmcdbtn?embed" title="Distribution en cloche" loading="lazy"></iframe>
+    </div>
+  </section>
 
-<iframe src="https://www.desmos.com/calculator/kew40kn4rp?embed" 
-        width="500" height="500" 
-        style="border: 1px solid #ccc" frameborder="0"></iframe>
+  <section>
+    <h2>La distribution en U</h2>
+    <div class="graph">
+      <iframe src="https://www.desmos.com/calculator/kew40kn4rp?embed" title="Distribution en U" loading="lazy"></iframe>
+    </div>
+  </section>
 
-<h2>Les distributions asymétriques</h2>
+  <section>
+    <h2>Les distributions asymétriques</h2>
+    <div class="graph">
+      <iframe src="https://www.desmos.com/calculator/icwcllfznd?embed" title="Distributions asymétriques" loading="lazy"></iframe>
+    </div>
+  </section>
 
-<iframe src="https://www.desmos.com/calculator/icwcllfznd?embed" 
-        width="500" height="500" 
-        style="border: 1px solid #ccc" frameborder="0"></iframe>
+  <section>
+    <h2>La distribution uniforme</h2>
+    <div class="graph">
+      <iframe src="https://www.desmos.com/calculator/acee51qph4?embed" title="Distribution uniforme" loading="lazy"></iframe>
+    </div>
+  </section>
+</main>
 
-<h2>La distribution uniforme</h2>
-
-<iframe src="https://www.desmos.com/calculator/acee51qph4?embed" 
-        width="500" height="500" 
-        style="border: 1px solid #ccc" frameborder="0"></iframe>
+</body>
+</html>
