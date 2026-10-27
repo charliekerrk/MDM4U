@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MDM4U | Module 2.3</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body { font-family: "Roboto", sans-serif; line-height: 1.6; }
+.w3-bar-block .w3-bar-item { padding: 12px 16px; font-weight: 500; }
+.content { max-width: 980px; margin: 0 auto; }
+.card { background: #fff; border-left: 5px solid #009688; padding: 20px 24px; margin: 0 0 24px; box-shadow: 0 2px 6px #00000012; }
+.card h2 { color: #00695c; margin-top: 0; }
+.formula { background: #e0f2f1; padding: 14px 18px; margin: 14px 0; font-size: 1.08rem; text-align: center; border-radius: 4px; }
+.note { background: #fff8e1; border-left: 5px solid #f9a825; padding: 14px 18px; margin: 18px 0; }
+.embed { position: relative; width: 100%; aspect-ratio: 16 / 9; margin: 12px 0 8px; }
+.embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.graph { width: 100%; max-width: 720px; height: 520px; border: 1px solid #ddd; }
+img { max-width: 100%; height: auto; }
+.source { font-size: .9rem; color: #555; }
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<script>$(function(){ $("#nav-placeholder").load("nav.html"); });</script>
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+<div class="w3-main" style="margin-left:250px;">
+<div id="myTop" class="w3-container w3-top w3-theme w3-large"><p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i><span id="myIntro" class="w3-hide">MDM4U</span></p></div>
+<header class="w3-container w3-theme" style="padding:64px 32px"><h1 class="w3-xxxlarge">Module 2.3 : Les mesures de dispersion</h1></header>
+<div class="w3-container" style="padding:32px"><main class="content">
+
+<div class="card"><h2>À quoi servent les mesures de dispersion?</h2><p>Elles indiquent à quel point les données sont rapprochées ou éloignées les unes des autres. Deux groupes peuvent avoir la même moyenne, mais une dispersion différente. Il faut donc regarder le centre et la dispersion ensemble.</p></div>
+<div class="card"><h2>L'étendue</h2><p>L'étendue est la différence entre la valeur maximale et la valeur minimale.</p><div class="formula">étendue = maximum − minimum</div><p>Pour les données 5, 7, 8, 10 et 12, l'étendue est 12 − 5 = 7. Cette mesure est simple, mais elle dépend beaucoup des deux valeurs extrêmes.</p></div>
+<div class="card"><h2>Les quartiles</h2><p>Les quartiles divisent les données placées en ordre croissant en quatre parties approximatives. Q1 correspond au premier quartile, Q2 est la médiane et Q3 correspond au troisième quartile. La convention de calcul utilisée doit rester la même pendant tout le travail.</p></div>
+<div class="card"><h2>L'écart interquartile</h2><p>L'écart interquartile, ou ÉIQ, décrit la dispersion des 50 % de données qui se trouvent au centre.</p><div class="formula">ÉIQ = Q3 − Q1</div><p>Il est moins influencé par les valeurs extrêmes que l'étendue. Un ÉIQ petit signifie que la moitié centrale des données est regroupée sur un intervalle plus court.</p></div>
+<div class="card"><h2>L'écart type</h2><p>L'écart type mesure l'écart typique des valeurs par rapport à la moyenne. Un écart type faible signifie que les données sont généralement proches de la moyenne. Un écart type élevé signifie qu'elles sont plus dispersées. L'écart type est exprimé dans la même unité que les données.</p></div>
+<div class="card"><h2>Comment calculer l'écart type?</h2><ol><li>Calculer la moyenne.</li><li>Soustraire la moyenne de chaque valeur.</li><li>Élever chaque différence au carré.</li><li>Calculer la moyenne de ces carrés.</li><li>Prendre la racine carrée du résultat.</li></ol><div class="formula">Pour une population : σ = √(Σ(x − μ)² ÷ N)</div><p>Dans cette formule, x représente une donnée, μ la moyenne et N le nombre total de données. Avec un échantillon, la formule utilise généralement n − 1 au dénominateur. En pratique, une calculatrice ou un tableur peut vérifier le calcul.</p></div>
+<div class="card"><h2>Exercices 2.3 et sources</h2><p><a target="_blank" href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch12/5214890-eng.htm">Statistique Canada, calcul de l'étendue et de l'écart interquartile</a></p><p><a target="_blank" href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch12/5214891-eng.htm">Statistique Canada, variance et écart type</a></p><p><a target="_blank" href="https://openstax.org/books/introductory-statistics-2e/pages/2-3-measures-of-the-location-of-the-data">OpenStax, quartiles et écart interquartile</a></p></div>
+<div class="card"><h2>Réponses aux exercices 2.3</h2><p><strong>Espérance de vie :</strong> minimum 37,3 ans, maximum 75,9 ans, étendue 38,6 ans, médiane 63,95 ans, Q1 54,1 ans, Q3 70,5 ans et écart interquartile 16,4 ans.</p><p><strong>Écart interquartile :</strong> pour les ensembles 2b, 2c et 2d, les résultats sont respectivement 52, 11 et 5.</p><p><strong>Écart type de la population :</strong> ensemble 3a, 0,3750; 3b, 0,6960; 3c, 2,8723; 3d, 2,6533.</p><p><strong>Salaires :</strong> Q1 = 30 000 $, médiane = 32 000 $, Q3 = 34 000 $, écart interquartile = 4 000 $, moyenne = 31 750 $ et écart type ≈ 2 665,36 $.</p><p><a class="w3-button w3-teal" target="_blank" href="https://docs.google.com/document/d/1xlaSAHrtRVRG6RvmpzewT8kuO3T02c20/edit?usp=sharing">Voir l’énoncé des exercices 2.3</a></p></div>
+</main></div>
+<footer class="w3-container w3-theme" style="padding:32px"><p>Portfolio de mathématiques de la gestion des données.</p></footer>
+</div>
+<script>
+function w3_open() {{ document.getElementById("mySidebar").style.display="block"; document.getElementById("myOverlay").style.display="block"; }}
+function w3_close() {{ document.getElementById("mySidebar").style.display="none"; document.getElementById("myOverlay").style.display="none"; }}
+window.onscroll=function() {{ var top=document.getElementById("myTop"); if(document.documentElement.scrollTop>80) top.classList.add("w3-card-4"); else top.classList.remove("w3-card-4"); }};
+</script></body></html>
