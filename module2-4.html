@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MDM4U | Module 2.4</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body { font-family: "Roboto", sans-serif; line-height: 1.6; }
+.w3-bar-block .w3-bar-item { padding: 12px 16px; font-weight: 500; }
+.content { max-width: 980px; margin: 0 auto; }
+.card { background: #fff; border-left: 5px solid #009688; padding: 20px 24px; margin: 0 0 24px; box-shadow: 0 2px 6px #00000012; }
+.card h2 { color: #00695c; margin-top: 0; }
+.formula { background: #e0f2f1; padding: 14px 18px; margin: 14px 0; font-size: 1.08rem; text-align: center; border-radius: 4px; }
+.note { background: #fff8e1; border-left: 5px solid #f9a825; padding: 14px 18px; margin: 18px 0; }
+.embed { position: relative; width: 100%; aspect-ratio: 16 / 9; margin: 12px 0 8px; }
+.embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.graph { width: 100%; max-width: 720px; height: 520px; border: 1px solid #ddd; }
+img { max-width: 100%; height: auto; }
+.source { font-size: .9rem; color: #555; }
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<script>$(function(){ $("#nav-placeholder").load("nav.html"); });</script>
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+<div class="w3-main" style="margin-left:250px;">
+<div id="myTop" class="w3-container w3-top w3-theme w3-large"><p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i><span id="myIntro" class="w3-hide">MDM4U</span></p></div>
+<header class="w3-container w3-theme" style="padding:64px 32px"><h1 class="w3-xxxlarge">Module 2.4 : La distribution normale et l'écart réduit</h1></header>
+<div class="w3-container" style="padding:32px"><main class="content">
+
+<div class="card"><h2>La distribution normale</h2><p>Une distribution normale est une distribution en forme de cloche, centrée et symétrique autour de sa moyenne. Les valeurs proches de la moyenne sont plus fréquentes que les valeurs très éloignées.</p><img src="https://tikz.net/wp-content/uploads/2023/12/normal-distribution.png" alt="Courbe de distribution normale avec les écarts types"><p class="source">Image : <a target="_blank" href="https://tikz.net/normal-distribution/">TikZ.net, Normal Distribution</a>. Licence indiquée sur la page : Creative Commons Attribution-ShareAlike 4.0.</p></div>
+<div class="card"><h2>La règle empirique</h2><p>Pour une distribution normale, environ 68 % des données se trouvent à moins d'un écart type de la moyenne, environ 95 % à moins de deux écarts types et environ 99,7 % à moins de trois écarts types. Ces pourcentages s'appliquent à une distribution normale et ne doivent pas être utilisés automatiquement pour toutes les séries de données.</p></div>
+<div class="card"><h2>L'écart réduit ou cote z</h2><p>L'écart réduit indique combien d'écarts types une valeur se trouve au-dessus ou au-dessous de la moyenne.</p><div class="formula">z = (x − μ) ÷ σ</div><p>Une cote z positive indique une valeur au-dessus de la moyenne. Une cote z négative indique une valeur au-dessous de la moyenne. Une cote z égale à 0 correspond exactement à la moyenne.</p><div class="embed"><iframe src="https://www.youtube.com/embed/2tuBREK_mgE" title="Vidéo sur les cotes z et la standardisation" allowfullscreen></iframe></div><p class="source">Vidéo : <a target="_blank" href="https://www.youtube.com/watch?v=2tuBREK_mgE">Z-Scores, Standardization, and the Standard Normal Distribution</a>.</p></div>
+
+<div class="card"><h2>Réponses aux exercices 2.4</h2><p><strong>Partie technologie :</strong> l’ensemble a a une moyenne de 45,1214, une médiane de 45,5 et un écart type de 1,6952. L’ensemble b a une moyenne de 8,5926, une médiane de 8 et un écart type de 2,8965.</p><p><strong>Partie papier-crayon :</strong> les tableaux 1 et 3 sont les plus proches d’une distribution normale. Pour les sachets de bonbons, la moyenne est 135 et l’écart type est 15. La limite de taille à risque est environ 165,3 cm. En prenant 0,36 comme écart type, 68 % du café se trouve de 9,84 à 10,56 oz; plus de 10,8 oz représente environ 4,8 %; entre 9,6 et 10,2 oz environ 45,2 %; moins de 9 oz environ 0,04 %. Une tasse de 12 oz présente un risque de débordement très faible. La garantie des fours devrait être d’environ 6,9 ans.</p><p><a class="w3-button w3-teal" target="_blank" href="https://docs.google.com/document/d/1bUNBKZS1bh1bUH59YuIURLPIh6ZiQo7nWPvuj5-WMS4/edit?usp=sharing">Voir l’énoncé technologie 2.4</a> <a class="w3-button w3-teal" target="_blank" href="https://docs.google.com/document/d/1NIRYjd7qnqgq-R0AjuC3kqqakZydVtv4xTYQmEvgOug/edit?usp=sharing">Voir l’énoncé papier-crayon 2.4</a></p></div>
+<div class="card"><h2>Sources</h2><p><a target="_blank" href="https://www.edu.gov.on.ca/eng/curriculum/secondary/math1112currb.pdf">Ministère de l'Éducation de l'Ontario, curriculum MDM4U</a></p><p><a target="_blank" href="https://openstax.org/books/introductory-statistics-2e/pages/6-introduction">OpenStax, distributions de probabilités normales</a></p></div>
+</main></div>
+<footer class="w3-container w3-theme" style="padding:32px"><p>Portfolio de mathématiques de la gestion des données.</p></footer>
+</div>
+<script>
+function w3_open() {{ document.getElementById("mySidebar").style.display="block"; document.getElementById("myOverlay").style.display="block"; }}
+function w3_close() {{ document.getElementById("mySidebar").style.display="none"; document.getElementById("myOverlay").style.display="none"; }}
+window.onscroll=function() {{ var top=document.getElementById("myTop"); if(document.documentElement.scrollTop>80) top.classList.add("w3-card-4"); else top.classList.remove("w3-card-4"); }};
+</script></body></html>
